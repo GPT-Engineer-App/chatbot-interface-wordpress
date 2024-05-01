@@ -32,7 +32,7 @@ function App() {
         </div>
         <div className="h-64 overflow-y-auto mb-4 p-2 bg-white rounded">
           {messages.map((message, index) => (
-            <div key={index} className={`p-2 rounded my-1 ${message.sender === "user" ? "bg-blue-200 ml-auto" : "bg-green-200"}`}>
+            <div key={index} className={`p-2 rounded my-1 max-w-xs ${message.sender === "user" ? "bg-blue-200 ml-auto" : "bg-green-200 mr-auto"}`}>
               {message.text}
             </div>
           ))}
