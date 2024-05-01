@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import { FaRobot } from "react-icons/fa";
 
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (event) => {
     setInput(event.target.value);
